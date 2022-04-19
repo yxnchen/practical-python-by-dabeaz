@@ -20,9 +20,10 @@ def portfolio_cost(filename):
     return total_cost
 
 
-pcost = portfolio_cost('./Work/Data/portfolio.csv')
-print(pcost)
-pcost = portfolio_cost('./Work/Data/missing.csv')
-print(pcost)
-pcost = portfolio_cost('./Work/Data/portfoliodate.csv')
-print(pcost)
+if __name__ == '__main__':
+    pcost = portfolio_cost('./Work/Data/portfolio.csv')
+    print(pcost)
+    pcost = portfolio_cost('./Work/Data/missing.csv')
+    print(pcost)
+    pcost = portfolio_cost('./Work/Data/portfoliodate.csv')
+    print(pcost)
